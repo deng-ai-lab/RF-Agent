@@ -1,0 +1,23 @@
+defaults:
+  - _self_
+  - env: ant
+  - override hydra/launcher: local
+  - override hydra/output: local
+
+hydra:
+  job:
+    chdir: True
+
+model: gpt-4o-mini  # LLM model
+suffix: GPT  # suffix for generated files (indicates LLM model)
+
+# test parameters
+test_reward_function: "/reward_functions/isaac/RFAgent/Ant-4o-mini.py"
+test_max_iterations: 500 # RL Policy training iterations for final reward function (different iterations in diff tasks on IsaacGym, and keep 6000 on Bi-DexHands)
+num_eval: 5 # number of evaluation episodes to run for the final reward
+capture_video: False # whether to capture policy rollout videos
+
+# Weights and Biases
+use_wandb: False # whether to use wandb for logging
+wandb_username: "" # wandb username if logging with wandb
+wandb_project: "" # wandb project if logging with wandb

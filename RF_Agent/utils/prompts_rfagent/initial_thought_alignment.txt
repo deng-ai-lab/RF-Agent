@@ -1,0 +1,5 @@
+Following is the Design Idea of a reward function for the problem and the code for implementing the reward function.
+Design Idea: {design_idea}
+Code: {reward_function}
+The content of the Design Idea cannot fully represent what the reward function has done informative. So, now you should re-describe the reward function using less than 4 sentences.
+Hint: You should reference the given Design Idea and highlight the most critical design ideas of the code. You can analyze the code to describe which reward components it contains, which observations they are calculated based on, what are the parameters and structure of the reward coupling process, and what special ideas are used.

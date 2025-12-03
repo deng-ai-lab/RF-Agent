@@ -1,0 +1,27 @@
+defaults:
+  - _self_
+  - env: humanoid
+  - override hydra/launcher: local
+  - override hydra/output: local
+
+hydra:
+  job:
+    chdir: True
+
+# LLM parameters
+model: gpt-4o-mini  # LLM model (e.g. gpt-4o, gpt-4o-mini)
+temperature: 1.0
+suffix: GPT  # suffix for generated files (indicates LLM model)
+
+# Revolve core parameters
+iteration: 5 # how many iterations of Revolve to run (5 for IsaacGym, 32 for Bi-DexHands)
+sample: 16 # number of Revolve samples to generate per iteration
+max_iterations: 500 # RL Policy training iterations (decrease this half to make the feedback loop faster)
+test_max_iterations: 1000 # RL Policy training iterations for final reward function (different iterations in diff tasks on IsaacGym, and keep 6000 on Bi-DexHands)
+num_eval: 5 # number of evaluation episodes to run for the final reward
+capture_video: False # whether to capture policy rollout videos
+
+# Weights and Biases
+use_wandb: False # whether to use wandb for logging
+wandb_username: "" # wandb username if logging with wandb
+wandb_project: "" # wandb project if logging with wandb

@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+  - env: ant
+  - override hydra/launcher: local
+  - override hydra/output: local
+
+hydra:
+  job:
+    chdir: True
+
+# LLM parameters
+model: gpt-4o-mini  # LLM model (e.g. gpt-4o, gpt-4o-mini)
+temperature: 1.0
+suffix: GPT  # suffix for generated files (indicates LLM model)
+
+# RF-Agent core parameters
+simulations: 80 # how many counts of RF-Agent to run
+tree_max_depth: 16 # max depth for the tree
+max_iterations: 500 # RL Policy training iterations (decrease this half to make the feedback loop faster)
+test_max_iterations: 500 # RL Policy training iterations for final reward function (different iterations in diff tasks on IsaacGym, and keep 6000 on Bi-DexHands)
+num_eval: 5 # number of evaluation episodes to run for the final reward, also control seed
+capture_video: False # whether to capture policy rollout videos
+
+# Weights and Biases
+use_wandb: False # whether to use wandb for logging
+wandb_username: "" # wandb username if logging with wandb
+wandb_project: "" # wandb project if logging with wandb
+
+# Seed
+train_seed: 0
+test_max_iter_for_seed: 5

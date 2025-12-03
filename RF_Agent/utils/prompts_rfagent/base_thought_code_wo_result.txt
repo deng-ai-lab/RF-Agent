@@ -1,0 +1,3 @@
+No.{i} reward function:
+Design Idea: {design_idea}
+Code: {reward_function}

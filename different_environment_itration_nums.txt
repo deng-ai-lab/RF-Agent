@@ -1,0 +1,13 @@
+IssacGym:
+     max_iterations test_max_iterations (test_max_iteration keep default to benchmark settings, while max_iteration is used in searching process is often half to increase search speed)
+Ant: 500 500
+Humaniod: 500 1000
+Anymal: 500 1000
+QuadCopter: 500 500
+Allegrohand: 2500 5000
+ShadowHand: 3000 6000
+FrankaCabinet: 750 1500
+
+IssacGym:
+     max_iterations test_max_iterations (test_max_iteration keep default to benchmark settings, while max_iteration is used in searching process is often half to increase search speed)
+each task: 3000 6000

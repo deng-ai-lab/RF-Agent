@@ -1,0 +1,3 @@
+(1) 'task_score' reflects the agent's actual task score or success rate after training under the current reward function.
+(2) If the values for a certain reward component are near identical throughout, then this means RL is not able to optimize this component as it is written.
+(3) If some reward components' magnitude is significantly larger or smaller, its value may not conducive to policy learning.

@@ -1,0 +1,7 @@
+Be sure to remember the definition of the task. Additionally, I have {nums} existing reward functions with their design ideas and codes as follows.
+
+{reward_func_group}
+
+Now, based on the task definition, imagine how an expert-level strategy completes the task, describe the execution planning and motion process of the expert strategy for the task, and then evaluate the given k reward functions according to your imagined description process, and judge the similarity of each reward function with the imagined process, with the numerical value limited to [-1,1].
+
+Finally, return an array enclosed in square brackets, such as [0.25, 0.5, -0.5, ..., 1], and its length is {nums}.

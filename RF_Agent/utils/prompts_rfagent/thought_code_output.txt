@@ -1,0 +1,7 @@
+First, describe the design idea and main steps of your reward function in one sentence.
+The description must be inside a brace outside the code implementation.
+Next, write a reward function based on this idea. The output of the reward function should consist of two items:
+    (1) the total reward,
+    (2) a dictionary of each individual reward component.
+The code output should be formatted as a python code string: "```python ... ```".
+Do not give additional explanations.

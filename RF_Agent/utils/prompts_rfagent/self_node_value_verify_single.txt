@@ -1,0 +1,8 @@
+Be sure to remember the definition of the task. Additionally, I have an existing reward function with its design idea and code as follows.
+
+Design Idea: {design_idea}
+Code: {reward_function}
+
+Now, based on the task definition, imagine how an expert-level strategy completes the task, describe the execution planning and motion process of the expert strategy for the task, and then evaluate the given reward functions according to your imagined description process, and judge the similarity of the given reward function with the imagined process, with the numerical value limited to [-1,1].
+
+Finally, return the value enclosed in square brackets, such as [0.5].
