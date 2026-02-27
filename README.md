@@ -1,6 +1,7 @@
 # RF-Agent: Automated Reward Function Design via Language Agent Tree Search
 [NeurIPS 2025 Spotlight] The official implementation of "RF-Agent: Automated Reward Function Design via Language Agent Tree Search"
 
+![Poster](figs/poster.png)
 ---
 
 ## 📢 Updates
