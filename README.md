@@ -1,5 +1,38 @@
-# RF-Agent
-[NeurIPS 2025] The official implementation of "RF-Agent: Automated Reward Function Design via Language Agent Tree Search"
+# RF-Agent: Automated Reward Function Design via Language Agent Tree Search
+[NeurIPS 2025 Spotlight] The official implementation of "RF-Agent: Automated Reward Function Design via Language Agent Tree Search"
+
+---
+
+## 📢 Updates
+- **[2025/10/01]** 🌟 Our paper has been accepted as a **Spotlight** at NeurIPS 2025!
+- **[2025/10/15]** The official codebase for RF-Agent is now public. Welcome to open issues for any questions.
+
+---
+
+## 👥 Authors
+**Ning Gao**, **Xiuhui Zhang**, **Xingyu Jiang**, **Mukang You**, **Mohan Zhang**, **Yue Deng** *
+
+*Beihang University*
+
+---
+
+## 📖 Abstract
+Designing efficient reward functions for low-level control tasks is a challenging problem. While recent research uses Large Language Models (LLMs) to generate dense reward functions, they often suffer from poor utilization of historical feedback and inefficient search in complex control tasks. 
+
+To address this, we propose **RF-Agent**, a framework that treats LLMs as language agents and frames reward function design as a sequential decision-making process. RF-Agent integrates Monte Carlo Tree Search (MCTS) to manage the reward design and optimization process, effectively leveraging the multi-stage contextual reasoning ability of LLMs. This approach better utilizes historical information and improves search efficiency, achieving outstanding experimental results across 17 diverse low-level control tasks in IsaacGym and Bi-DexHands.
+
+---
+
+## 🧠 Method & Architecture
+
+![Quick View](figs/intro_motivation.png)
+**Reshaping LLM-based Reward Function Design Problem from a sequential decision-making view and comparison with greedy/evolutionary approaches.**
+
+
+![RF-Agent Optimization Trace](figs/method.png)
+**Illustration of RF-Agent with the total tree growth process and MCTS iteration cycle.**
+
+---
 
 # Installation
 
